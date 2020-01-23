@@ -1,3 +1,10 @@
+/*border box fitting adjustment */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* The body will be the dark grey background */
+
 body {
   background-color: #333;
   font-family: sans-serif;
@@ -14,8 +21,48 @@ nav {
   padding: 10px 0 15px 15px;
   position: fixed;
   width: 420px;
+	background-color: #000;
 }
 
 .restaurant-list {
   padding-top: 50px;
 }
+
+/*End of Original code */
+
+.content {
+	display: inline-block;
+	padding: 20px;
+}
+
+.arrow {
+	margin: 0;
+  float: right;
+  vertical-align: middle;
+	width: 20%;
+}
+
+.location {
+	background-color: #DFDEE0;
+	border-bottom: 1px solid #777777;
+}
+
+.location:hover {
+	background-color: #B4B2B4;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 175%;
+}
+
+h3 {
+	font-size: 150%;
+	padding-top: 4px;
+}
+
+
+
+/* container will contain just the listings and the black bar with arrow.
+It should have padding on all sides, be in the center of the page, and take
+up approx 2/3rds of the screen width*/
